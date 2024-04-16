@@ -360,5 +360,32 @@ DestroyUITab:AddButton({
     end
 })
 
--- Finalize your script
+-- Create a Credits Tab
+local CreditsTab = Window:MakeTab({
+    Name = "Credits",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+-- Add a section for developer credits
+local CreditsSection = CreditsTab:AddSection({
+    Name = "Developers"
+})
+
+-- Adding buttons to the Credits Section for developers
+CreditsSection:AddButton({
+    Name = "Penguu!! - Dev",
+    Callback = function() 
+        -- This button will not perform any action when clicked.
+    end
+})
+
+CreditsSection:AddButton({
+    Name = "99Lives - Dev",
+    Callback = function() 
+        -- This button will not perform any action when clicked.
+    end
+})
+
+-- Finalize the script
 OrionLib:Init()
