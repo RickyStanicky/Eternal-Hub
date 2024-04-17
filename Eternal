@@ -3,7 +3,7 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 
 -- Creating a Window
 local Window = OrionLib:MakeWindow({
-    Name = "Admin Menu",
+    Name = "Eternal Hub",
     HidePremium = false,
     SaveConfig = true,
     ConfigFolder = "OrionTest"
